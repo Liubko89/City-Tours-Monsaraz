@@ -1,6 +1,46 @@
-/* .heroSection {
-  background-video: url("../../video/AdobeStock.mp4");
+.heroSection {
+  position: relative;
+  border-top: 3px solid #774422;
+  border-radius: 8px;
+}
+
+.video {
+  width: 100%;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-} */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.heroContent {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2e2d4;
+  border: 3px solid #774422;
+  border-radius: 16px;
+  color: #774422;
+  padding: 24px;
+}
+
+.subdescr {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #f2e2d4;
+  background-color: #774422;
+  line-height: 1.8;
+}

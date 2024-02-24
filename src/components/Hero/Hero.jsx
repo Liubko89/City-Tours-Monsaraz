@@ -1,18 +1,19 @@
 import css from "./Hero.module.css";
+import videoBG from "../../video/AdobeStock.mp4";
 
 function Hero() {
   return (
     <section className={css.heroSection}>
-      <h1>City tours in Monsaraz</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero et
-        voluptatem alias quas sint incidunt aspernatur assumenda dicta a
-        temporibus. Laboriosam maiores, sequi velit est dolores voluptates
-        maxime tempore veniam.
-      </p>
-      <video controls>
-        <source src="../../video/AdobeStock.mp4" type="video/mp4" />
-      </video>
+      <div className={css.heroBackground}>
+        <div className={css.heroContent}>
+          <h1>Monsaraz</h1>
+        </div>
+        <p className={css.subdescr}>
+          Immerse yourself in the charming atmosphere and enjoy the beauty of
+          the Portuguese countryside
+        </p>
+      </div>
+      <video className={css.video} src={videoBG} autoPlay loop muted></video>
     </section>
   );
 }
