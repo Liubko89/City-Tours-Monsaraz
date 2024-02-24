@@ -1,25 +1,36 @@
-.heroSection {
+.heroWrap {
   position: relative;
-  border-top: 3px solid #774422;
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.heroTitle {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  border-bottom: 0.2px solid var(--cream);
+  letter-spacing: 0.04em;
 }
 
 .video {
   width: 100%;
   background-size: cover;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .heroBackground {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  overflow: hidden;
+  bottom: 8px;
+  background-color: var(--background);
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .heroContent {
-  width: 50%;
+  text-align: center;
+  width: 75%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,19 +39,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f2e2d4;
-  border: 3px solid #774422;
-  border-radius: 16px;
-  color: #774422;
-  padding: 24px;
+  background-color: var(--dark-brown);
+  border: 1px solid var(--main);
+  border-radius: 4px;
+  color: var(--cream);
+  padding: 8px;
 }
 
-.subdescr {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #f2e2d4;
-  background-color: #774422;
+.heroDescription {
+  color: var(--cream);
+  background-color: var(--dark-brown);
+  padding: 8px;
+  text-align: center;
+  border: 1px solid var(--main);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 768px) {
+  .heroTitle {
+    font-size: 32px;
+  }
 }

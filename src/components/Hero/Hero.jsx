@@ -4,16 +4,19 @@ import videoBG from "../../video/AdobeStock.mp4";
 function Hero() {
   return (
     <section className={css.heroSection}>
-      <div className={css.heroBackground}>
-        <div className={css.heroContent}>
-          <h1>Monsaraz</h1>
+      <div className={css.heroWrap}>
+        <div className={css.heroBackground}>
+          <div className={css.heroContent}>
+            <h1 className={css.heroTitle}>Reguengos de Monsaraz</h1>
+          </div>
         </div>
-        <p className={css.subdescr}>
-          Immerse yourself in the charming atmosphere and enjoy the beauty of
-          the Portuguese countryside
-        </p>
+        <video className={css.video} src={videoBG} autoPlay loop muted></video>
       </div>
-      <video className={css.video} src={videoBG} autoPlay loop muted></video>
+
+      <p className={css.heroDescription}>
+        Immerse yourself in the charming atmosphere and enjoy the beauty of the
+        Portuguese countryside
+      </p>
     </section>
   );
 }

@@ -1,3 +1,11 @@
+:root {
+  --main: #774422;
+  --secondary: #c08947;
+  --cream: #f2e2d4;
+  --dark-brown: #4b3827;
+  --background: rgba(0, 0, 0, 0.4);
+}
+
 .wrapper {
   max-width: 375px;
   width: 100%;

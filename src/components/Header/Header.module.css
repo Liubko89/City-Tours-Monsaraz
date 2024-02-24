@@ -1,0 +1,45 @@
+.header {
+  width: 100%;
+  padding: 4px 0;
+  background-color: var(--dark-brown);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  padding: 12px;
+  background-color: var(--cream);
+  border: 1px solid var(--main);
+  border-radius: 100%;
+  position: absolute;
+  cursor: pointer;
+  scale: 1;
+  transition: scale 300ms;
+}
+
+.logo:hover {
+  scale: 1.1;
+}
+
+.navigation {
+  display: flex;
+  padding: 4px;
+  background-color: var(--cream);
+  border-radius: 30px;
+  margin: 0 auto;
+  gap: 8px;
+}
+
+.navigationItem {
+  padding: 4px;
+  color: var(--dark-brown);
+  text-decoration: none;
+  border: 1px solid var(--main);
+  border-radius: 30px;
+  width: 80px;
+  text-align: center;
+}
